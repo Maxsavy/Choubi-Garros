@@ -1,0 +1,120 @@
+/* Grille responsive */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+    background-color: #00523c;
+  }
+
+/* Titre */
+.players-title {
+    color: #111827;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* Cartes */
+  .player-card {
+    background-color: #ede8d0;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Avatar */
+  .player-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contenu principal */
+  .card-body {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-body .fw-bold {
+    font-size: 1.1rem;
+    color: #111827;
+  }
+  
+  .card-body .text-muted {
+    font-size: 0.9rem;
+    color: #6b7280 !important;
+  }
+  
+  /* Badge de statut */
+  .badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    padding: 0.35rem 0.75rem;
+    text-transform: capitalize;
+  }
+  
+  .badge-active {
+    background-color: #d1fae5;
+    color: #047857;
+  }
+  
+  .badge-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .badge-inactive {
+    background-color: #e0e7ff;
+    color: #3730a3;
+  }
+  
+  .badge-removed {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  /* Footer avec icônes */
+  .card-footer {
+    background-color: #ede8d0 !important;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e7eb;
+    border-radius: 0 0 16px 16px;
+  }
+  
+  .card-footer a {
+    display: flex;
+    align-items: center;
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .card-footer a i {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .card-footer a:hover {
+    color: #2563eb;
+  }
+  
+  /* Responsive avatar */
+  @media (max-width: 768px) {
+    .player-avatar {
+      width: 48px;
+      height: 48px;
+    }
+  }

@@ -1,0 +1,35 @@
+<div class="players-page">
+    <app-navbar></app-navbar>
+    <div class="players-header">
+        <h1>Joueurs</h1>
+        <p>Découvrez les joueurs du tournoi et leurs informations</p>
+    </div>
+    <div class="players-grid">
+        <div class="player-card" *ngFor="let player of players">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img
+                [src]="player.avatarUrl"
+                [alt]="player.name"
+                class="player-avatar"
+                />
+                <div class="ms-3">
+                <p class="fw-bold mb-1">{{ player.name }}</p>
+                <p class="text-muted mb-0">{{ player.email }}</p>
+                <p class="text-muted mb-0" *ngIf="player.level">Niveau: {{ player.level }}</p>
+                </div>
+            </div>
+            <span class="badge rounded-pill" [ngClass]="getStatusClass(player.status)">
+                {{ player.status }}
+            </span>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-link text-reset">Message <i class="fas fa-envelope ms-1"></i></a>
+            <a href="#" class="btn btn-link text-reset">Profil <i class="fas fa-user ms-1"></i></a>
+        </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>
