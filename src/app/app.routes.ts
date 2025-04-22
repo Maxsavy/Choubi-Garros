@@ -5,6 +5,7 @@ import { Sign } from 'crypto';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import { HistoryPageComponent } from './pages/history-page/history-page.component';
 import { CalendarPageComponent } from './pages/calendar-page/calendar-page.component';
+import { PlayersPageComponent } from './pages/players-page/players-page.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'sign-up', component: SignUpPageComponent},
   { path: 'history', component: HistoryPageComponent},
   { path: 'calendar', component: CalendarPageComponent},
+  { path: 'players', component: PlayersPageComponent},
   { path: '**', redirectTo: '/home' }
 ];
