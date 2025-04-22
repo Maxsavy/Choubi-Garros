@@ -1,0 +1,56 @@
+{
+  "title": "Echelle des niveaux (1-10)",
+  "introduction": "Afin d'équilibrer les équipes de doubles pour le tournoi amateur, chaque participant est invité à s'auto-évaluer selon l'échelle suivante. Cette évaluation nous permettra de constituer des paires équilibrées en tenant compte du niveau de chacun.",
+  "levels": [
+    {
+      "level": 1,
+      "title": "Débutant absolu",
+      "description": "N'a jamais tenu une raquette ou joué au tennis. Aucune connaissance des règles du jeu."
+    },
+    {
+      "level": 2,
+      "title": "Novice",
+      "description": "A joué une ou deux fois. Peut échanger quelques balles mais ne maîtrise pas encore les gestes de base ni les règles."
+    },
+    {
+      "level": 3,
+      "title": "Débutant occasionnel",
+      "description": "A joué quelques fois, commence à connaître les règles principales. Peut servir et renvoyer la balle, mais les échanges restent très courts et irréguliers."
+    },
+    {
+      "level": 4,
+      "title": "Débutant motivé",
+      "description": "Joue occasionnellement, parvient à maintenir des échanges de quelques frappes. Maîtrise partiellement les règles et les gestes techniques de base."
+    },
+    {
+      "level": 5,
+      "title": "Intermédiaire en progression",
+      "description": "Joue régulièrement de manière loisir. Maîtrise le service, les coups droits et revers simples. Commence à comprendre les placements en double."
+    },
+    {
+      "level": 6,
+      "title": "Intermédiaire confirmé",
+      "description": "Joue fréquemment. A une bonne régularité dans les échanges, sait varier les coups et utilise quelques stratégies de jeu. À l'aise sur un terrain."
+    },
+    {
+      "level": 7,
+      "title": "Avancé loisir",
+      "description": "Bonne maîtrise technique et tactique. A l'habitude de jouer en double ou simple de manière régulière (1 à 2 fois par semaine). Capable de jouer des matchs complets avec intensité."
+    },
+    {
+      "level": 8,
+      "title": "Compétiteur amateur",
+      "description": "Participe à des matchs ou tournois amateurs. Très bonne régularité, capable de mettre en place des schémas de jeu. Bon niveau physique et mental."
+    },
+    {
+      "level": 9,
+      "title": "Joueur expérimenté",
+      "description": "Pratique intensive depuis plusieurs années. Participe régulièrement à des compétitions avec un bon classement régional. Solide techniquement, tactiquement et mentalement."
+    },
+    {
+      "level": 10,
+      "title": "Joueur expert",
+      "description": "Plus de 10 ans de pratique régulière en club, compétitions fréquentes, classement significatif. Très haut niveau amateur ou ancien joueur classé. Excellent niveau technique et stratégique."
+    }
+  ]
+}

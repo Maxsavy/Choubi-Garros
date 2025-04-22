@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="card">
+		<div class="card-image">	
+			<img src="./assets/images/tennis_aesthetic.jpg" alt="Card image"/>
+			<h2 class="card-heading">
+				Inscrivez-vous!
+				<small>Venez participer au tournoi!</small>
+			</h2>
+		</div>
+		<form class="card-form" (ngSubmit)="onSubmit()">
+			<div class="input">
+				<input type="text" class="input-field" [(ngModel)]="name" name="name" required/>
+				<label class="input-label">Prénom</label>
+			</div>
+			<div class="input">
+				<input type="text" class="input-field" [(ngModel)]="surname" name="surname" required/>
+				<label class="input-label">Nom</label>
+			</div>
+			<div class="input">
+				<input type="email" class="input-field" [(ngModel)]="email" name="email" required/>
+				<label class="input-label">Email</label>
+			</div>
+			<div class="input">
+				<select class="input-field" [(ngModel)]="level" name="level" required>
+					<option value="0" disabled>Choisissez votre niveau</option>
+					@for (level of levels; track level.level) {
+						<option [value]="level.level">{{ level.level }} - {{ level.title }}</option>
+					}
+				</select>
+				<label class="input-label active">Niveau</label>
+			</div>
+			<div class="action">
+				<button type="submit" class="action-button">C'est parti!</button>
+			</div>
+		</form>
+		<div class="card-info">
+			<p>En vous inscrivant, vous acceptez nos <a href="#">Conditions d'utilisation</a></p>
+		</div>
+	</div>
+</div>

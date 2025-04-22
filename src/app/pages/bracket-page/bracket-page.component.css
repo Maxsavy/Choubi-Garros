@@ -1,0 +1,58 @@
+.bracket-page {
+  padding-top: 150px; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+  background-color : #00523c;
+}
+
+
+.bracket-container {
+  width: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box; 
+}
+
+
+.bracket-header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bracket-header h1 {
+  font-size: 2.5rem;
+  color: #ede8d0;
+  margin-bottom: 10px;
+}
+
+.bracket-header p {
+  font-size: 1.2rem;
+  color: #ede8d0;
+}
+
+
+.bracket-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+app-bracket {
+  display: block;
+  width: 100%;
+  max-width: 1600px; 
+  margin: 0 auto; 
+}
+
+
+app-footer {
+  width: 100%;
+  margin-top: auto; 
+}

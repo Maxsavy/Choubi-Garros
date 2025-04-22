@@ -1,0 +1,36 @@
+<div class="sign-up-page">
+    <app-navbar></app-navbar>
+    <div class="containers-wrapper">
+      <div class="container left-container">
+        <app-sign-up-form></app-sign-up-form>
+      </div>
+      <div class="container right-container">
+        @if (isLoading) {
+          <div class="loading">Chargement des niveaux...</div>
+        } @else if (error) {
+          <div class="error">Impossible de charger les niveaux. Veuillez réessayer.</div>
+        } @else if (tennisLevelData) {
+          <h1 class="title">{{ tennisLevelData.title }}</h1>
+          <div class="introduction">
+            <p>{{ tennisLevelData.introduction }}</p>
+          </div>
+          <div class="levels-container">
+            @for (level of tennisLevelData.levels; track level.level) {
+              <div class="level-item">
+                <div class="level-header">
+                  <span class="level-number">Niveau {{ level.level }}</span>
+                  <span class="level-title">– {{ level.title }}</span>
+                </div>
+                <div class="level-description">
+                  {{ level.description }}
+                </div>
+              </div>
+            }
+          </div>
+        } @else {
+          <div class="no-data">Aucune information disponible sur les niveaux.</div>
+        }
+      </div>
+    </div> 
+    <app-footer></app-footer>
+  </div>
