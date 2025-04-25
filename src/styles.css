@@ -1,8 +1,8 @@
-
 html, body {
     font-family: 'Lora', cursive;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Adjust this value based on the actual header height */
     height: 100%;
     background-color: #ede8d0;
   }

@@ -1,4 +1,13 @@
 /* Grille responsive */
+.players-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120 px;
+    background-color: #00523c;
+  }
+  
+  /* Grille des joueurs */
+
 .players-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
