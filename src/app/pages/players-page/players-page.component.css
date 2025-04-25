@@ -6,6 +6,16 @@
     background-color: #00523c;
   }
   
+.players-header {
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ede8d0;
+    background-color: #00523c;
+  }
   /* Grille des joueurs */
 
 .players-grid {
@@ -75,11 +85,6 @@
   .badge-active {
     background-color: #d1fae5;
     color: #047857;
-  }
-  
-  .badge-pending {
-    background-color: #fef3c7;
-    color: #92400e;
   }
   
   .badge-inactive {
